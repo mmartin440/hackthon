@@ -1,0 +1,107 @@
+body {
+    background-color: lightyellow;
+    margin: 60px; 
+}
+.container-one {
+
+}
+.intro {
+    position: relative;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, 50%); 
+    text-align: center;
+    bottom: 50px;
+}
+.intro h1 {
+    font-size: 50px;
+    color: white; 
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4%, cyan 28.56% , blue 35.7%, magenta 42.89%, red 50%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards; 
+}
+@keyframes slide {
+   0%{
+    background-position-x: 0%;
+   }
+   100%{
+    background-position-y: 600vw;
+   }
+}
+
+#slides .slide-container .container-one img {
+    width: 150px; 
+    margin: 0 auto; 
+    display: block; 
+}
+#slides .arrow-prev{
+    position: absolute;
+    top: 50%; 
+    left: 10%;
+}
+img {
+    max-width: 150%;
+    height: 150px; 
+    object-fit: cover;
+    position: relative; 
+    right: 50px;
+}
+h2  {
+    position: relative;
+    left: 100px; 
+}
+a {
+    position: relative;
+    left: 100px; 
+}
+p {
+    position: relative;
+    left: 100px; 
+    
+}
+.slick-prev:before, .slick-next:before {
+   color: lightgreen !important; 
+}
+
+.slick-prev, .slick-next { 
+    position: absolute !important;
+    top: 30% !important;
+}
+
+
+  .two-slides {
+    background-color: lightgrey;
+  }
+
+
+  
+  /* .popup .popuptext::after {
+      content: "";
+      position: center;
+      top: 50%;
+      left: 100%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+  }
+  
+  
+  .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  /* @-webkit-keyframes fadeIn {
+      from {opacity: 0;} 
+      to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+  } */ 
